@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fylo landing page with two column layout. Desafío de Frontend Mentor desarrollado con HTML5, CSS3, SASS y GULP.>
+    <link rel="icon" type="image/png" sizes="32x32" href="./build/img/favicon-32x32.png">
+    <title>Fylo Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__navbar">
+                <div class="header__brand">
+                    <img src="build/img/logo.svg" width="166" height="49" alt="logo fylo">
+                </div>
+
+                <nav class="menu">
+                    <a class="menu__link" href="#">Features</a>
+                    <a class="menu__link" href="#">Team</a>
+                    <a class="menu__link" href="#">Sign In</a>
+                </nav>
+            </div>
+
+            <div class="header__grid">
+                <img class="header__image" src="build/img/illustration-1.svg" width="750" height="555"
+                    alt="ilustracion archivos online">
+
+                <div class="header__content">
+                    <h1 class="header__heading">All your files in one secure location, accessible anywhere.</h1>
+
+                    <div class="header__description">
+                        <p class="header__text">Fylo stores your most important files in one secure location.
+                            Access them wherever you need, share and collaborate with friends,
+                            family, and co-workers.</p>
+
+                        <form class="header__form" action="#">
+                            <input class="header__input" type="email" id="email" placeholder="Enter your email...">
+                            
+                            <input class="header__submit" type="submit" value="Get Started">
+                        </form>
+                    </div>
+                </div> <!-- .content -->
+
+            </div> <!-- .grid -->
+        </div> <!-- .container -->
+    </header>
+
+    <main class="cloud">
+        <picture>
+            <source sizes="1920w, 768w" 
+                    srcset="build/img/bg-curve-desktop.svg 1920w,
+                            build/img/bg-curve-mobile.svg 768w"
+                    type="image/svg+xml">
+                
+            <img class="cloud__wave" loading="lazy" decoding="async" src="build/img/bg-curve-mobile.svg" lazyalt="imagen" width="500" height="300">
+        </picture>
+
+        <div class="cloud__background">
+            <div class="cloud__grid container">
+                <img class="cloud__image" src="build/img/illustration-2.svg" width="800" height="604" alt="ilustracion seccion Cloud">
+
+                <div class="cloud__content">
+                    <h2 class="cloud__heading">Stay productive, wherever you are</h2>
+
+                    <p class="cloud__text">Never let location be an issue when accessing your files. Fylo has you
+                        covered for all of your file storage needs.</p>
+                    <p class="cloud__text">Securely share files and folders with friends, family and colleagues for
+                        live collaboration. No email attachments required!</p>
+
+                    <div class="cloud__btn">
+                        <a class="cloud__link" href="#">See how Fylo works</a>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <blockquote class="testimonial__blockquote">Fylo has improved our team productivity by an order of magnitude. Since
+                            making the switch our team has become a well-oiled collaboration machine.
+                        </blockquote>
+
+                        <div class="testimonial__footer">
+                            <div class="testimonial__box-image">
+                                <img class="testimonial__image" src="build/img/avatar-testimonial.jpg" width="125" height="125" alt="avatar testimonial">
+                            </div>
+                
+                            <div class="testimonial__author">
+                                <p class="testimonial__name">Kyle Burton</p>
+                                <p class="testimonial__occupation">Founder & CEO, Huddle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- .content -->
+            </div> <!-- .grid .container -->
+        </div>
+    </main>
+
+    <section class="subscribe">
+        <div class="subscribe__grid container">
+            <div class="subscribe__content">
+                <h2 class="subscribe__heading">Get early access today</h2>
+                <p class="subscribe__text">It only takes a minute to sign up and our free starter tier is extremely generous.
+                    If you have any questions, our support team would be happy to help you.</p>
+            </div>
+
+            <form class="subscribe__form" action="#">
+                <input class="subscribe__input" type="email" id="email" placeholder="email@example.com">
+                                
+                <input class="subscribe__submit" type="submit" value="Get Started For Free">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__brand" src="build/img/logo-byn.svg" width="166" height="49" alt="logo fylo">
+
+            <div class="footer__grid">
+                <div class="footer__box">
+                    <p class="footer__contact">Phone: +1-543-123-4567</p>
+                    <p class="footer__contact">example@fylo.com</p>
+                </div>
+
+                <div class="footer__box">
+                    <a class="footer__link" href="#">About Us</a>   
+                    <a class="footer__link" href="#">Jobs</a>
+                    <a class="footer__link" href="#">Press</a>
+                    <a class="footer__link" href="#">Blog</a>
+                </div>
+
+                <div class="footer__box">
+                    <a class="footer__link" href="#">Contact Us</a>
+                    <a class="footer__link" href="#">Terms</a>
+                    <a class="footer__link" href="#">Privacy</a>
+                </div>
+
+                <div class="footer__box">
+                    <nav class="sociales">
+                        <a class="sociales__link" href="https://facebook.com">
+                            <span class="sociales__accesible">Facebook</span>
+                        </a>
+                        <a class="sociales__link" href="https://twitter.com">
+                            <span class="sociales__accesible">Twitter</span>
+                        </a>
+                        <a class="sociales__link" href="https://instagram.com">
+                            <span class="sociales__accesible">Instagram</span>
+                        </a>
+                    </nav>
+                </div>
+            </div> <!-- grid -->
+        </div> <!-- container -->
+    </footer>
+
+    <div class="attribution">
+        <div class="attribution__grid">
+            <p class="attribution__text">Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+            <p class="attribution__text">Coded by <a class="attribution__link" href="https://github.com/mescobar89" target="_blank">Martín Escobar</a>.</p>
+        </div>
+    </div>
+
+    <!-- <script src="./build/js/images.js"></script> -->
+</body>
+</html>
